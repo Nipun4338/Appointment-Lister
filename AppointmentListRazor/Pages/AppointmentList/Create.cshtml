@@ -1,0 +1,50 @@
+﻿@page
+@model AppointmentListRazor.Pages.AppointmentList.CreateModel
+<br />
+<h2 class="text-info">Create New Appointment</h2>
+<br />
+
+<div class="border container" style="padding:30px;">
+    <form method="post">
+        <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Appointment.Name"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Appointment.Name" class="form-control" />
+            </div>
+            <span asp-validation-for="Appointment.Name" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Appointment.Details"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Appointment.Details" class="form-control" />
+            </div>
+            <span asp-validation-for="Appointment.Details" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3">
+                <label asp-for="Appointment.Time"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Appointment.Time" class="form-control" />
+            </div>
+            <span asp-validation-for="Appointment.Time" class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Create" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="Index" class="btn btn-success form-control">Back to List</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentListRazor", "AppointmentListRazor\AppointmentListRazor.csproj", "{562F42E5-1B1E-4715-9A4C-7214AFE07C88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{562F42E5-1B1E-4715-9A4C-7214AFE07C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562F42E5-1B1E-4715-9A4C-7214AFE07C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562F42E5-1B1E-4715-9A4C-7214AFE07C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562F42E5-1B1E-4715-9A4C-7214AFE07C88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67D67EA5-B5D6-442C-8B5D-1E4A8856E367}
+	EndGlobalSection
+EndGlobal
