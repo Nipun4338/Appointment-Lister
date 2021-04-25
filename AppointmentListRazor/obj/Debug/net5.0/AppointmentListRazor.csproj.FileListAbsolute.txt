@@ -388,3 +388,4 @@ C:\Users\Nipun\source\repos\AppointmentListRazor\AppointmentListRazor\bin\Debug\
 C:\Users\Nipun\source\repos\AppointmentListRazor\AppointmentListRazor\obj\Debug\net5.0\Razor\Pages\AppointmentList\Index.cshtml.g.cs
 C:\Users\Nipun\source\repos\AppointmentListRazor\AppointmentListRazor\obj\Debug\net5.0\Razor\Pages\AppointmentList\Create.cshtml.g.cs
 C:\Users\Nipun\source\repos\AppointmentListRazor\AppointmentListRazor\obj\Debug\net5.0\Razor\Pages\AppointmentList\Edit.cshtml.g.cs
+C:\Users\Nipun\source\repos\AppointmentListRazor\AppointmentListRazor\obj\Debug\net5.0\Razor\Pages\AppointmentList\Upsert.cshtml.g.cs

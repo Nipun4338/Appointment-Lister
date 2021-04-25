@@ -1,5 +1,6 @@
 ﻿using AppointmentListRazor.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,9 +19,23 @@ namespace AppointmentListRazor.Controllers
             _db = db;
         }
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            return Json(new { data = _db.Appointment.ToList() });
+            return Json(new { data =await _db.Appointment.ToListAsync() });
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var appointmentFromDb = await _db.Appointment.FirstOrDefaultAsync(u => u.Id == id);
+            if(appointmentFromDb==null)
+            {
+                return Json(new { success = false, message = "Error while deleting." });
+
+            }
+            _db.Appointment.Remove(appointmentFromDb);
+            await _db.SaveChangesAsync();
+            return Json(new { success = true, message = "Delete successful!" });
         }
     }
 }
